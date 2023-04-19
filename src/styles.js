@@ -16,4 +16,41 @@ const styles = {
       "relative transition-all duration-500 content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-[#4d0154] before:via-[#daa3df] before:to-[#793d7f] hover:before:w-full hover:before:opacity-100"
 };
 
-export { styles };
+
+const popup = {
+  popup: {
+    position: "fixed",
+    top: "50%",
+    left: "50%",
+    width: "35%",
+    height: "90%",
+    backgroundColor: "rgba(0, 0, 0, 0.2)",
+    color: "black",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "left",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "white",
+    border: "1px solid rgb(201, 201, 201)",
+    borderRadius: "10px",
+    padding: "20px",
+    zIndex: "1000",
+    overflow: "auto",
+  },
+  button: {
+    margin: "5px",
+    padding: "5px 10px",
+    color: "white",
+    border: "none",
+    borderRadius: "4px",
+    cursor: "pointer",
+    display: "flex",
+    position: "fixed",
+    top: "0%",
+    right: "0%",
+  },
+};
+
+
+export { styles, popup };

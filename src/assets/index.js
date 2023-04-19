@@ -19,9 +19,13 @@ import C from "./tech/C++.png";
 import tailwind from "./tech/tailwind.png";
 import sass from "./tech/sass.png";
 import threejs from "./tech/Three JS.png";
+import php from "./tech/PHP.png";
 import java from "./tech/Java.png"
 import oracle from "./tech/oracle.png"
 import sql from "./tech/sql.png"
+
+import githubb from "./tech/github.png"
+import linkedin from "./tech/linkedin.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -31,6 +35,8 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import CV from "./file/CV.pdf";
 
 export {
   mylogo,
@@ -54,8 +60,11 @@ export {
   tailwind,
   sass,
   threejs,
+  php,
   oracle,
   sql,
+  githubb,
+  linkedin,
   meta,
   shopify,
   starbucks,
@@ -63,4 +72,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  CV,
 };

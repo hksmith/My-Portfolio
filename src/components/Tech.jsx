@@ -1,12 +1,11 @@
-import { BallCanvas } from "./canvas"
-import { SectionWrapper } from "../hoc"
 import { technologies } from "../constants"
+import { SectionWrapper } from "../hoc"
 
 const Tech = () => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
       {technologies.map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
+        <div className="w-20 h-20" key={technology.name}>
           <img className="h-12 w-12 filter grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer" src={technology.icon}/>
           <h1>{technology.name}</h1>
         </div>
@@ -15,4 +14,4 @@ const Tech = () => {
   )
 }
 
-export default Tech
+export default SectionWrapper(Tech, "");

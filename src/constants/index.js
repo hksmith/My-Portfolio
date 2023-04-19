@@ -25,6 +25,9 @@ import {
     java,
     oracle,
     sql,
+    php,
+    githubb,
+    linkedin,
   } from "../assets";
   
   export const navLinks = [
@@ -99,6 +102,10 @@ import {
       icon: threejs,
     },
     {
+      name: "PHP",
+      icon: php,
+    },
+    {
       name: "Git",
       icon: git,
     },
@@ -123,6 +130,19 @@ import {
       icon: oracle,
     },
   ];
+
+  const socialMedia = [
+    {
+      name: "Github",
+      icon: githubb,
+      link: "https://github.com/hksmith",
+    },
+    {
+      name: "Linkedin",
+      icon: linkedin,
+      link: "https://www.linkedin.com/in/kalab-solomon-780a8b254",
+    },
+  ]
   
   const experiences = [
     {
@@ -272,4 +292,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, socialMedia, experiences, testimonials, projects };

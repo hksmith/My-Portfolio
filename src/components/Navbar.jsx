@@ -1,6 +1,5 @@
-import { React, useEffect, useState} from 'react';
-import {Link} from 'react-router-dom';
-
+import { React, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { mylogo, menu, close } from '../assets';
@@ -8,11 +7,30 @@ import { mylogo, menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(
+        prevScrollPos > currentScrollPos ||
+        currentScrollPos < 100
+      );
+      setPrevScrollPos(currentScrollPos);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos, visible]);
 
   return (
-    <nav className={`
-          ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-gradient-to-r from-[#2d0131] to-[#27002b] via-[#0b020c] via-[#09000a]`}>
-            <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+    <nav
+      className={`
+          ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-gradient-to-r from-[#2d0131] to-[#27002b] via-[#0b020c] via-[#09000a] transition-all duration-300}
+          ${visible ? '' : 'hidden'}
+        `}
+    >
+            <div className="w-full flex justify-between items-center max-w-7xl mx-auto"> 
               <Link to="/" className="flex items-center gap-2"
                     onClick={() => {
                       setActive("");
