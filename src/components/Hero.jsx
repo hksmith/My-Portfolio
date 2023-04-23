@@ -6,7 +6,7 @@ import Typed from 'typed.js';
 
 
 const Hero = () => {
-  
+
   const textRef = React.useRef(null);
 
   React.useEffect(() => {
@@ -21,9 +21,9 @@ const Hero = () => {
       typed.destroy();
     };
   }, []);
-  
+
   return (
-    <section className="relative w-full h-[675px] mx-auto">
+    <section className="relative w-full h-[675px] mx-auto bg-">
       <div className={`${styles.paddingX} absolute inset-0
            top-[120px] max-w-7xl mx-auto flex flex-row
            items-start gap-5`}>

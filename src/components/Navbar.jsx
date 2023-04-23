@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav
       className={`
-          ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-gradient-to-r from-[#2d0131] to-[#27002b] via-[#0b020c] via-[#09000a] transition-all duration-300}
+          ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-gradient-to-r from-[#29002d] to-[#3d0046] via-[#0b020c] via-[#09000a] transition-all duration-300}
           ${visible ? '' : 'hidden'}
         `}
     >

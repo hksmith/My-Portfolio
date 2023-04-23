@@ -1,23 +1,21 @@
 import { BrowserRouter } from "react-router-dom";
 
-import {About, Contact, Experience, SocialMedia, Hero, Navbar, Tech, Works, StarsCanvas} from './components';
+import {About, Contact, Experience, Footer, Hero, Navbar, Tech, Works } from './components';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero bg-gradient-to-r from-[#2d0131] to-[#27002b] via-[#0b020c] via-[#09000a]
-                        bg-cover bg-no-repeat bg-center">
+        <div className="bg-hero bg-gradient-to-r from-[#29002d] to-[#3d0046] via-[#0b020c] via-[#09000a]
+                        bg-cover bg-no-repeat bg-center ">
           <Navbar />
           <Hero />
           <About />
           <Experience />
           <Tech />
           <Works />
-          <SocialMedia />
-          <div className="relative z-0">
-            <StarsCanvas />
-          </div>
+          <Contact />
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
@@ -25,4 +23,3 @@ const App = () => {
 }
 
 export default App
- 

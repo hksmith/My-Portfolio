@@ -7,7 +7,6 @@ import { CV } from '../assets';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
-
 function CVp({ open, onClose }) {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
@@ -26,7 +25,7 @@ function CVp({ open, onClose }) {
                 ]}
               />
               <button onClick={onClose} className="absolute top-5 right-0 mr-4 mt-4 text-white font-bold py-2 px-4 rounded">
-                <MdOutlineCancel size={24} color='red'/>
+                <MdOutlineCancel size={24} color='gray'/>
               </button>
             </div>
           </Worker>

@@ -30,15 +30,12 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, est
-        eligendi! Minus inventore ab explicabo odio dicta dolores tempora nihil,
-        ducimus sed, deleniti illum? Vero ipsum laudantium, architecto harum
-        consectetur animi quas fugit aperiam facere aliquam eum maiores
-        voluptate tempora. In voluptatem dicta ipsa expedita, doloribus
-        pariatur, molestiae rerum illum necessitatibus velit ipsam voluptates
-        laudantium reiciendis dignissimos, iure vel placeat animi numquam. Vel
-        veniam adipisci corrupti recusandae, necessitatibus hic voluptatum
-        eligendi, nisi id quo enim?
+      Hello, I am a software engineering student with a passion for full-stack web development. 
+      I started programming in 2020 with C++, Java, and Python, and have gained experience in the MERN stack.
+      <br></br>As a full-stack developer, I enjoy solving complex problems and working closely with teams and clients to deliver high-quality solutions. I am always looking to learn new technologies and techniques to improve my skills and stay up-to-date with industry trends.
+      <br></br> When I'm not coding, I like to attend hackathons.
+      I'm also an avid reader and enjoy spending time outdoors.
+      Feel free to contact me if you'd like to discuss how we can work together on your next project.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

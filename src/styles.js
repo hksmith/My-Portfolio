@@ -50,6 +50,7 @@ const popup = {
     top: "0%",
     right: "0%",
   },
+
 };
 
 

@@ -1,6 +1,6 @@
 import {
     mobile,
-    backend,
+    fullstack,
     creator,
     web,
     javascript,
@@ -14,13 +14,8 @@ import {
     mongodb,
     git,
     python,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    wolkite,
+    wkucpc,
     threejs,
     java,
     oracle,
@@ -28,6 +23,9 @@ import {
     php,
     githubb,
     linkedin,
+    Medium,
+    phpFO,
+    current,
   } from "../assets";
   
   export const navLinks = [
@@ -38,6 +36,10 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "project",
+      title: "Project",
     },
     {
       id: "contact",
@@ -51,12 +53,12 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Full-Stack Developer",
+      icon: fullstack,
     },
     {
       title: "Content Creator",
@@ -142,95 +144,48 @@ import {
       icon: linkedin,
       link: "https://www.linkedin.com/in/kalab-solomon-780a8b254",
     },
+    {
+      name: "Medium",
+      icon: Medium,
+      link: "https://medium.com/@kalab27solomon",
+    },
   ]
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "MERN Developer, Intern",
+      company_name: "Wolkite University",
+      icon: wolkite,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "June 2022 - April 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developing and maintaining web applications using MERN-Stack and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Club President",
+      company_name: "WKUCPC",
+      icon: wkucpc,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Mar 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Led a team of club leaders and faculty advisors to plan events, workshops, and guest lectures for members to build their programming skills.",
+        "Organized a hackathon that brought together students from across the university to work on innovative projects.",
+        "Established partnerships with local tech companies to provide members with career insights and opportunities.",
+        "Mentored and supported individual members in their programming journeys.",
+        "Developed valuable leadership, communication, and project management skills that will serve in future career pursuits.",
       ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Online Registration System",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web application that allows users to view available registration categories and courses, apply for their preferred option, and complete registration by making a fee through our integrated payment system. (It's on Development Stage) ",
       tags: [
         {
           name: "react",
@@ -245,51 +200,30 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: current,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Food Ordering System",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to watch availble food, search for food in diffrent category and order foods.",
       tags: [
         {
-          name: "react",
+          name: "php",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "mysql",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "sass",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: phpFO,
+      source_code_link: "https://github.com/hksmith/Online_food_ordering__Class_project_just_pushing_to_show_case",
     },
   ];
   
-  export { services, technologies, socialMedia, experiences, testimonials, projects };
+  export { services, technologies, socialMedia, experiences, projects };

@@ -1,5 +1,5 @@
 import mylogo from "./mylogo.png";
-import backend from "./backend.png";
+import fullstack from "./fullstack.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
@@ -26,21 +26,19 @@ import sql from "./tech/sql.png"
 
 import githubb from "./tech/github.png"
 import linkedin from "./tech/linkedin.png"
+import Medium from "./tech/Medium.png"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import wolkite from "./company/wolkite.png";
+import wkucpc from "./company/wkucpc.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import current from "./current.png";
+import phpFO from "./phpFO.png";
 
 import CV from "./file/CV.pdf";
 
 export {
   mylogo,
-  backend,
+  fullstack,
   creator,
   mobile,
   web,
@@ -65,12 +63,10 @@ export {
   sql,
   githubb,
   linkedin,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  Medium,
+  wolkite,
+  wkucpc,
   CV,
+  current,
+  phpFO,
 };
