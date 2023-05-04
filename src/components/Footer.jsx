@@ -19,9 +19,11 @@ const Footer = () => {
             </a>
           </div>
         ))}
-        <button onClick={() => {setCv(true)}} className="bottom-0 left-0 flex items-center bg-[#a93db3] hover:opacity-50 hover:scale-95 text-white rounded-md h-10 shadow-md m-4 z-30">
+        <a href="https://drive.google.com/file/d/1leLxVSISbNlDGv5UozGJKBFtIyjQqOW4/view?usp=share_link">
+        <button className="bottom-0 left-0 flex items-center bg-[#a93db3] hover:opacity-50 hover:scale-95 text-white rounded-md h-10 shadow-md m-4 z-30">
           <FaFilePdf className="mr-2" /> CV
         </button>
+        </a>
         
  
       </div>
